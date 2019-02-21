@@ -24,17 +24,6 @@ body{
     margin: 0 auto;
     position: relative;
     
-    &:before{
-        content: "";
-        background-color: $light-grey-color;
-        z-index: -1;
-        height: 100%;
-        width: 300%;
-        left: -50%;
-        position: absolute;
-        top: 0;
-    }
-    
     & .branding{
         display: flex;
         flex-direction: row;
