@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color: $blue-color;
+    @include transition-property(all);
+    @include transition-duration(.5s);
+}
+
+.btn{
+    background: $blue-color;
+    color: $white-color;
+    height: 50px;
+    padding: 16px 20px 0;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    @include border-radius(5px);
+    @include box-shadow(0 5px 17px 0 rgba(0,0,0,0.20));
+}
+
+button.btn{
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: bold;
+    color: $black-color;
+    margin: 0 0 20px;
+}
+
+h1{
+    font-size: 42px;
+    line-height: 48px;
+}
+h2{
+    font-size: 32px;
+    line-height: 35px;
+}
+h4{
+    font-size: 18px;
+    line-height: 21px;
+}
+h5{
+    font-size: 14px;
+    color: rgba($black-color, 0.5);
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+p{
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+ul{
+    & li{
+        margin: 0 0 15px;
+        position: relative;
+        padding-left: 60px;
+        font-size: 16px;
+        line-height: 23px;
+        
+        &:before{
+            content: "o";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            text-align: center;
+        }
+    }
+}
