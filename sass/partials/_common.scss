@@ -8,6 +8,10 @@ a{
     @include transition-duration(.5s);
 }
 
+img{
+    max-width: 100%;
+}
+
 .btn{
     background: $blue-color;
     color: $white-color;
@@ -19,6 +23,10 @@ a{
     font-weight: bold;
     @include border-radius(5px);
     @include box-shadow(0 5px 17px 0 rgba(0,0,0,0.20));
+    
+    &:hover{
+        background: #005186;
+    }
 }
 
 button.btn{

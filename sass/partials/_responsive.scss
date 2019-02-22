@@ -1,0 +1,77 @@
+@media only screen and (min-width:1245px){
+    .whatwedo > div{
+        margin: 0 -15px;
+    }
+}
+
+@media only screen and (min-width:769px){
+    .desktop-hide{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .whatwedo > div{
+        margin: 0;
+    }
+    
+    .mobile-hide{
+        display: none !important;
+    }
+    
+    h5{
+        text-align: center;
+    }
+    
+    .header{
+        background: $light-grey-color;
+        
+        & .branding{
+            justify-content: center;
+
+            & > span{
+                &:last-child{
+                    display: none;
+                }
+            }
+        }
+        
+        & .hero-section{
+            flex-direction: column-reverse;
+            margin-top: 45px;
+            margin-left: 15px;
+            margin-right: 15px;
+            
+            & div{
+                text-align: center;
+                
+                & img{
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    
+    .whyus, .benefits, .contact_us, .footer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .whyus > div, .benefits > .container > div{
+        justify-content: center;
+    }
+    
+    .contact_us > .container .consultation form{
+        & .btn{
+            width: 100%;
+            margin-bottom: 45px;
+        }
+        
+        & .fieldset{
+            & input{
+                width: 100%;
+            }
+        }
+    }
+    
+}
